@@ -106,7 +106,7 @@ if __name__ == '__main__':
     parser = argparse.ArgumentParser()
     parser.add_argument("--pad_path", help = "directory contain images", default = "data/random_ID_v1/validation")
     parser.add_argument("--unpad_path", help = "directory contain images", default = "data/random_ID_v1/validation")
-    parser.add_argument("--charset_path", help = "character set file path", default = "charsets/charset_size=11.txt")
+    parser.add_argument("--charset_path", help = "character set file path", default = "../charsets/charset_size=11.txt")
     parser.add_argument("--out_path", help = "output path", default = "data/random_ID_v1/random_ID_v1.validation")
     args = parser.parse_args()
     main(args)

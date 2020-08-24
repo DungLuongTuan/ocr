@@ -2,11 +2,9 @@
 class Hparams:
 	def __init__(self):
 		### data and save path
-		self.train_record_path = '/home/tuanluong/gpu/Documents/code/id_number/id_number.valid'
-		# self.train_record_path = '/Users/admin/Documents/code/id_number/temp.valid'
-		self.num_train_sample = 3213
-		self.valid_record_path = '/home/tuanluong/gpu/Documents/code/id_number/id_number.valid'
-		# self.valid_record_path = '/Users/admin/Documents/code/id_number/temp.valid'
+		self.train_record_path = '/home/dunglt/cmnd/dung/data/process_extract_0606/extract_0606_id_number/id_number.train'
+		self.num_train_sample = 82324
+		self.valid_record_path = '/home/dunglt/cmnd/dung/data/process_extract_0606/extract_0606_id_number/id_number.valid'
 		self.charset_path = 'charsets/charset_size=11.txt'
 		self.num_valid_sample = 3213
 		self.save_path = 'training_checkpoints'

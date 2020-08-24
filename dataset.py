@@ -25,8 +25,8 @@ class Dataset(object):
     def load_tfrecord(self, repeat=None):
         dataset = tf.data.TFRecordDataset(self.record_path)
         dataset = dataset.map(self.parse_tfrecord)
-        dataset = dataset.batch(self.hparams.batch_size)
-        self.dataset = dataset.cache()
+        self.dataset = dataset.batch(self.hparams.batch_size)
+        #self.dataset = dataset.cache()
         self.iterator = iter(dataset)
 
     def next_batch(self):
